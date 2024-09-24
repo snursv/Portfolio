@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8" />
+    	<meta name="description" content="Оценка школьного расписания." />
+	    <meta name="keywords" content="оценка, школа, расписание" />
+    	<title>Оценка школьного расписания</title>
+    </head>
+
+    <body topmargin="0" leftmargin="0" bgcolor="Cornsilk">
+        <table id="Table1" border="0">
+            <tr>
+                <td width="550">
+                    <p><b>&nbsp;Класс:</b></p>
+                    <p>
+                        <input name="kl" type="radio" value="1" checked> 1&nbsp;
+                        <input name="kl" type="radio" value="2"> 2&nbsp;
+                        <input name="kl" type="radio" value="3"> 3&nbsp;
+                        <input name="kl" type="radio" value="4"> 4&nbsp;
+                        <input name="kl" type="radio" value="5"> 5&nbsp;
+                        <input name="kl" type="radio" value="6"> 6&nbsp;
+                        <input name="kl" type="radio" value="7"> 7&nbsp;
+                        <input name="kl" type="radio" value="8"> 8&nbsp;
+                        <input name="kl" type="radio" value="9"> 9&nbsp;
+                        <input name="kl" type="radio" value="10"> 10&nbsp;
+                        <input name="kl" type="radio" value="11"> 11
+                    </p>
+                </td>
+                <td width="300" valign="top">
+                    <p><b>&nbsp;Учебная неделя:</b></p>
+                    <p>
+                        <input name="nd" type="radio" value="5" checked> 5 дней&nbsp;
+                        <input name="nd" type="radio" value="6"> 6 дней
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <hr size="1" width="100%">
+
+        <p><b>&nbsp;Расписание (в скобках - в каких классах преподается предмет):</b></p>
+        <table id="Table2" border="0">
+            <tr>
+                <td align="center">
+                    Урок
+                </td>
+                <td>
+                    &nbsp;Понедельник
+                </td>
+                <td>
+                    Вторник
+                </td>
+                <td>
+                    Среда
+                </td>
+                <td>
+                    Четверг
+                </td>
+                <td>
+                    Пятница
+                </td>
+                <td>
+                    Суббота
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    1
+                </td>
+                <td>
+                    <select id="Sel1">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option selected="selected" value="26">Разговоры о важном (1-11)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel2">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel3">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel4">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel5">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel6">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    2
+                </td>
+                <td>
+                    <select id="Sel21">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel22">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel23">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel24">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel25">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel26">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    3
+                </td>
+                <td>
+                    <select id="Sel31">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel32">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel33">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel34">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel35">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel36">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    4
+                </td>
+                <td>
+                    <select id="Sel41">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel42">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel43">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel44">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel45">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel46">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    5
+                </td>
+                <td>
+                    <select id="Sel51">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel52">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel53">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel54">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel55">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel56">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    6
+                </td>
+                <td>
+                    <select id="Sel61">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel62">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel63">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel64">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel65">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel66">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    7
+                </td>
+                <td>
+                    <select id="Sel71">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel72">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel73">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel74">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel75">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel76">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    8
+                </td>
+                <td>
+                    <select id="Sel81">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel82">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel83">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel84">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel85">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="Sel86">
+                        <option value="0">-</option>
+                        <option value="1">Алгебра (7-11)</option>
+                        <option value="2">Астрономия (10-11)</option>
+                        <option value="3">Биология (5-11)</option>
+                        <option value="4">География (5-11)</option>
+                        <option value="5">Геометрия (7-11)</option>
+                        <option value="6">Изобразительное искусство (1-6)</option>
+                        <option value="7">Иностранный язык (1-11)</option>
+                        <option value="8">Информатика (5-11)</option>
+                        <option value="9">История (России/Всеобщая) (5-11)</option>
+                        <option value="10">Краеведение (10-11)</option>
+                        <option value="11">Литература (5-11)</option>
+                        <option value="12">Литературное чтение (1-4)</option>
+                        <option value="13">Математика (1-6)</option>
+                        <option value="14">Мировая худож. культ. (МХК) (7-11)</option>
+                        <option value="15">Музыка (1-7)</option>
+                        <option value="16">Обществознание (5-11)</option>
+                        <option value="17">Основы безоп. жизн. (ОБЖ) (5-11)</option>
+                        <option value="18">Окружающий мир (1-4)</option>
+                        <option value="19">Русский язык (Родной язык) (1-11)</option>
+                        <option value="20">Труд (Технология) (1-9)</option>
+                        <option value="21">Физика (7-11)</option>
+                        <option value="22">Физическая культура (1-11)</option>
+                        <option value="23">Химия (8-11)</option>
+                        <option value="24">Экология (10-11)</option>
+                        <option value="25">Экономика (10-11)</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+
+        <hr size="1" width="100%">
+        <p>
+            &nbsp;&nbsp;<input onclick="CreateGraph()" type="button" value="Сформировать график">
+        </p>
+
+        <canvas id="myCanvas" width="700" height="470"
+                style="background-color: white; border: 3px solid white; margin: 0px;">
+            Ваш браузер не поддерживает Canvas.
+        </canvas>
+
+        <hr size="1" width="100%">
+        <p>
+            &nbsp;Оценка школьного расписания, версия 2.1t (24.09.2024)
+        </p>
+
+        <script>
+            "use strict";
+
+            let Class = 0;
+            const canvas = document.getElementById("myCanvas");
+            const context = canvas.getContext("2d");
+            let LW = context.lineWidth;
+
+            function CreateGraph() {
+                Class = 1;
+                let inpCl = document.getElementsByTagName("input")[0];
+                for (let i = 1; i < 11; i++) {
+                    inpCl = document.getElementsByTagName("input")[i];
+                    if (inpCl.checked) {
+                        Class = i + 1;
+                        break;
+                    }
+                }
+
+                let tPr = 0;
+                let tBall = 0;
+                let Ball1 = 0, Ball2 = 0, Ball3 = 0, Ball4 = 0, Ball5 = 0, Ball6 = 0;
+                let BallAll = 0;
+                let sel = document.getElementsByTagName("select")[0];
+
+                for (let i = 0; i <= 42; i += 6) {
+                    tBall = 0;
+                    sel = document.getElementsByTagName("select")[i];
+                    tPr = parseInt(sel.value);
+                    tBall = CalcT(tPr);
+                    Ball1 += tBall;
+                }
+
+                for (let i = 1; i <= 43; i += 6) {
+                    tBall = 0;
+                    sel = document.getElementsByTagName("select")[i];
+                    tPr = parseInt(sel.value);
+                    tBall = CalcT(tPr);
+                    Ball2 += tBall;
+                }
+
+                for (let i = 2; i <= 44; i += 6) {
+                    tBall = 0;
+                    sel = document.getElementsByTagName("select")[i];
+                    tPr = parseInt(sel.value);
+                    tBall = CalcT(tPr);
+                    Ball3 += tBall;
+                }
+
+                for (let i = 3; i <= 45; i += 6) {
+                    tBall = 0;
+                    sel = document.getElementsByTagName("select")[i];
+                    tPr = parseInt(sel.value);
+                    tBall = CalcT(tPr);
+                    Ball4 += tBall;
+                }
+
+                for (let i = 4; i <= 46; i += 6) {
+                    tBall = 0;
+                    sel = document.getElementsByTagName("select")[i];
+                    tPr = parseInt(sel.value);
+                    tBall = CalcT(tPr);
+                    Ball5 += tBall;
+                }
+
+                BallAll = Ball1 + Ball2 + Ball3 + Ball4 + Ball5;
+
+                if (BallAll == 0) {
+                    alert("Сумма баллов трудности за неделю = 0. Расчет невозможен.");
+                    return;
+                }
+
+                let p1 = (Ball1 * 100.0) / BallAll;
+                let p2 = (Ball2 * 100.0) / BallAll;
+                let p3 = (Ball3 * 100.0) / BallAll;
+                let p4 = (Ball4 * 100.0) / BallAll;
+                let p5 = (Ball5 * 100.0) / BallAll;
+
+                context.fillStyle = "White";
+                context.fillRect(1, 1, 699, 469);
+                context.fillStyle = "Black";
+                context.strokeStyle = "Black";  // "Navy";
+
+                context.beginPath();
+                context.moveTo(20, 20);
+                context.lineTo(20, 400);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(20, 390);
+                context.lineTo(620, 390);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(120, 380);
+                context.lineTo(120, 400);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(220, 380);
+                context.lineTo(220, 400);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(320, 380);
+                context.lineTo(320, 400);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(420, 380);
+                context.lineTo(420, 400);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(520, 380);
+                context.lineTo(520, 400);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(10, 24);
+                context.lineTo(30, 24);
+                context.stroke();
+
+                context.font = "14px Arial";
+                //context.fillText("Дни", 530, 395);
+                //context.fillText("1", 15, 415);
+                //context.fillText("2", 115, 415);
+                //context.fillText("3", 215, 415);
+                //context.fillText("4", 315, 415);
+                //context.fillText("5", 415, 415);
+                //context.fillText("6", 515, 415);
+                context.fillText("Понедельник", 15, 415);
+                context.fillText("Вторник", 115, 415);
+                context.fillText("Среда", 215, 415);
+                context.fillText("Четверг", 315, 415);
+                context.fillText("Пятница", 415, 415);
+                context.fillText("Суббота", 515, 415);
+                context.fillText("100 %", 31, 30);
+                context.fillText("Максимально допустимый процент трудности", 130, 455);
+                context.fillText("Дни", 620, 415);
+
+                let y1 = (p1 * 366) / 100;
+                let y2 = (p2 * 366) / 100;
+                let y3 = (p3 * 366) / 100;
+                let y4 = (p4 * 366) / 100;
+                let y5 = (p5 * 366) / 100;
+
+                context.strokeStyle = "LightCoral";
+                context.fillStyle = "LightCoral";
+                //context.strokeStyle = "RosyBrown";
+                //context.fillStyle = "RosyBrown";
+
+                context.fillRect(22, 23 + 366 - y1, 96, y1);
+                context.fillText(p1.toFixed(2) + " %", 22, 15);
+
+                context.fillRect(122, 23 + 366 - y2, 96, y2);
+                context.fillText(p2.toFixed(2) + " %", 122, 15);
+                context.fillRect(222, 23 + 366 - y3, 96, y3);
+                context.fillText(p3.toFixed(2) + " %", 222, 15);
+                context.fillRect(322, 23 + 366 - y4, 96, y4);
+                context.fillText(p4.toFixed(2) + " %", 322, 15);
+                context.fillRect(422, 23 + 366 - y5, 96, y5);
+                context.fillText(p5.toFixed(2) + " %", 422, 15);
+                context.fillText("Проценты", 620, 15);
+
+                context.strokeStyle = "Navy";
+                context.fillStyle = "Navy";
+
+                context.fillText(Ball1.toString(), 50, 380);
+                context.fillText(Ball2.toString(), 150, 380);
+                context.fillText(Ball3.toString(), 250, 380);
+                context.fillText(Ball4.toString(), 350, 380);
+                context.fillText(Ball5.toString(), 450, 380);
+                context.fillText("Баллы", 620, 380);
+
+                p1 = 18;
+                p2 = 20;
+                p3 = 24;
+                p4 = 20;
+                p5 = 18;
+                y1 = (p1 * 366) / 100;
+                y2 = (p2 * 366) / 100;
+                y3 = (p3 * 366) / 100;
+                y4 = (p4 * 366) / 100;
+                y5 = (p5 * 366) / 100;
+                
+                //context.strokeStyle = "Gold";
+                //context.fillStyle = "Gold";
+                context.lineWidth = 3.0;
+
+                context.beginPath();
+                context.moveTo(20, 23 + 366 - y1);
+                context.lineTo(120, 23 + 366 - y1);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(120, 23 + 366 - y2);
+                context.lineTo(220, 23 + 366 - y2);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(220, 23 + 366 - y3);
+                context.lineTo(320, 23 + 366 - y3);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(320, 23 + 366 - y4);
+                context.lineTo(420, 23 + 366 - y4);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(420, 23 + 366 - y5);
+                context.lineTo(520, 23 + 366 - y5);
+                context.stroke();
+
+                context.beginPath();
+                context.moveTo(20, 450);
+                context.lineTo(120, 450);
+                context.stroke();
+
+                context.lineWidth = LW;
+                context.fillText("18 %", 50, 15 + 366 - y1);
+                context.fillText("20 %", 150, 15 + 366 - y2);
+                context.fillText("24 %", 250, 15 + 366 - y3);
+                context.fillText("20 %", 350, 15 + 366 - y4);
+                context.fillText("18 %", 450, 15 + 366 - y5);
+
+            }
+
+
+            function CalcT(Pr) {
+                let Ball = 0;
+
+                // Здесь находился Алгоритм расчета трудности.
+                // Но он запатентован и не подлежит разглашению.
+
+                Ball = getRandomInt(2, 12);     // Заглушка
+                return Ball;
+            }
+
+
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+        </script>
+
+    </body>
+</html>
