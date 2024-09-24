@@ -18,7 +18,7 @@ DECLARE @DateStartYear DATETIME = DATEADD(YEAR, DATEDIFF(YEAR, 0, @DateRep), 0),
 
 
 if (not OBJECT_ID('tempdb.dbo.#main') is null)
-drop table tempdb.dbo.#main
+    drop table tempdb.dbo.#main
 
 Select capital.first_last_day(@DatePrevYear, 1) CurDay
 Into #main
@@ -44,7 +44,7 @@ Group By DATE_TRN
 
 
 if (not OBJECT_ID('tempdb.dbo.#main2') is null)
-drop table tempdb.dbo.#main2
+    drop table tempdb.dbo.#main2
 
 CREATE TABLE #main2(
 	Prizn smallint Null,
@@ -259,7 +259,6 @@ On ST0.ID_ACCOUNT = OA.ID_ACCOUNT
 	And ST0.DATE_TRN <= @DateRep
     AND ST0.DATE_NEXT > @DateRep
 Group By m3.ID_PAPER, m3.PAPER_NAME
-
 
 
 END;
